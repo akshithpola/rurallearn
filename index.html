@@ -1,0 +1,305 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#176b50">
+
+    <meta name="description"
+          content="RuralLearn provides accessible digital learning
+          resources for students and teachers.">
+
+    <title>RuralLearn - Digital Learning Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="./manifest.json">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo" id="homeLogo">
+            RuralLearn
+        </a>
+
+        <span class="header-tagline">
+            Learning for Everyone
+        </span>
+    </header>
+
+    <main class="container">
+
+        <!-- Welcome Page -->
+
+        <section id="welcomePage" class="card">
+
+            <div class="hero-icon">📚</div>
+
+            <h1>Welcome to RuralLearn</h1>
+
+            <p>
+                Learn anytime, anywhere.
+                Access study materials, assignments,
+                and educational resources.
+            </p>
+
+            <div class="button-group">
+                <button id="studentLoginButton">
+                    Student Login
+                </button>
+
+                <button id="teacherLoginButton"
+                        class="secondary-button">
+                    Teacher Login
+                </button>
+            </div>
+
+            <p class="small-text">
+                Designed for simple and accessible learning.
+            </p>
+
+        </section>
+
+
+        <!-- Login Page -->
+
+        <section id="loginPage" class="card hidden">
+
+            <h2 id="loginTitle">Sign In</h2>
+
+            <p id="loginDescription">
+                Enter your account details.
+            </p>
+
+            <form id="loginForm">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                    minlength="6"
+                >
+
+                <button type="submit" id="submitButton">
+                    Sign In
+                </button>
+
+            </form>
+
+            <p id="loginMessage" class="message"
+               role="status" aria-live="polite"></p>
+
+            <button id="showRegisterButton"
+                    class="text-button">
+                New student? Create an account
+            </button>
+
+            <button id="backButton"
+                    class="text-button">
+                ← Back to Home
+            </button>
+
+        </section>
+
+
+        <!-- Student Dashboard -->
+
+        <section id="studentDashboard" class="hidden">
+
+            <div class="dashboard-heading">
+                <div>
+                    <p class="eyebrow">STUDENT PORTAL</p>
+
+                    <h1>My Learning</h1>
+
+                    <p id="studentWelcome">
+                        Welcome to your dashboard.
+                    </p>
+                </div>
+
+                <button class="logout-button"
+                        data-action="logout">
+                    Sign Out
+                </button>
+            </div>
+
+            <div class="dashboard-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">📘</div>
+
+                    <h3>Class Notes</h3>
+
+                    <p>
+                        Read your learning materials.
+                    </p>
+
+                    <button data-action="open-library">
+                        Open Library
+                    </button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📝</div>
+
+                    <h3>Assignments</h3>
+
+                    <p>
+                        Review your learning tasks.
+                    </p>
+
+                    <button data-action="open-assignments">
+                        View Assignments
+                    </button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎥</div>
+
+                    <h3>Recorded Classes</h3>
+
+                    <p>
+                        Access recorded lessons.
+                    </p>
+
+                    <button data-action="open-recordings">
+                        View Lessons
+                    </button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+
+                    <h3>My Progress</h3>
+
+                    <p>
+                        Review your learning progress.
+                    </p>
+
+                    <button data-action="open-progress">
+                        View Progress
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Teacher Dashboard -->
+
+        <section id="teacherDashboard" class="hidden">
+
+            <div class="dashboard-heading">
+                <div>
+                    <p class="eyebrow">TEACHER PORTAL</p>
+
+                    <h1>Teacher Dashboard</h1>
+
+                    <p id="teacherWelcome">
+                        Manage your learning resources.
+                    </p>
+                </div>
+
+                <button class="logout-button"
+                        data-action="logout">
+                    Sign Out
+                </button>
+            </div>
+
+            <div class="dashboard-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">📤</div>
+
+                    <h3>Manage Class Notes</h3>
+
+                    <p>
+                        Publish text-based study materials.
+                    </p>
+
+                    <button data-action="manage-notes">
+                        Manage Notes
+                    </button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📋</div>
+
+                    <h3>Assignments</h3>
+
+                    <p>
+                        Create learning assignments.
+                    </p>
+
+                    <button data-action="manage-assignments">
+                        Manage Assignments
+                    </button>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">👩‍🎓</div>
+
+                    <h3>Student Progress</h3>
+
+                    <p>
+                        Review available performance data.
+                    </p>
+
+                    <button data-action="manage-progress">
+                        View Progress
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Shared Content Area -->
+
+        <section id="contentPage" class="card hidden">
+
+            <button id="contentBackButton"
+                    class="text-button">
+                ← Back to Dashboard
+            </button>
+
+            <h2 id="contentTitle">Learning Resources</h2>
+
+            <div id="contentBody"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            © 2026 RuralLearn |
+            Accessible Education for Everyone
+        </p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
+```

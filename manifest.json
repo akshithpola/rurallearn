@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "RuralLearn - Digital Learning Platform",
+  "short_name": "RuralLearn",
+  "description": "A lightweight digital learning platform for rural students.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f7f5",
+  "theme_color": "#176b50",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

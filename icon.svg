@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512"
+     height="512"
+     viewBox="0 0 512 512">
+
+    <rect width="512"
+          height="512"
+          rx="100"
+          fill="#176b50"/>
+
+    <path d="M100 150
+             Q180 110 256 155
+             Q332 110 412 150
+             L412 340
+             Q332 300 256 345
+             Q180 300 100 340 Z"
+          fill="#ffffff"/>
+
+    <path d="M256 155 L256 345"
+          stroke="#176b50"
+          stroke-width="12"
+          fill="none"/>
+
+    <path d="M130 195 Q185 180 225 205
+             M130 235 Q185 220 225 245
+             M285 205 Q335 180 382 195
+             M285 245 Q335 220 382 235"
+          stroke="#176b50"
+          stroke-width="10"
+          stroke-linecap="round"
+          fill="none"/>
+
+</svg>
